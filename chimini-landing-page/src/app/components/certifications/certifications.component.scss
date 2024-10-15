@@ -1,0 +1,12 @@
+.container::-webkit-scrollbar {
+  height: 8px; /* For Chrome, Safari, and Opera */
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
