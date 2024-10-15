@@ -1,0 +1,49 @@
+<header class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="text-2xl font-bold text-gray-800">
+        Your Company Name
+      </div>
+      <button (click)="sidenav.toggle()" class="md:hidden p-2 text-gray-600 focus:outline-none" #sidenavToggle>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  
+    <mat-sidenav-container class="hidden md:block">
+      <mat-sidenav #sidenav mode="side" class="bg-gray-100 w-64">
+        <ul class="p-4">
+          <li class="py-2">
+            <a routerLink="/" class="text-gray-800 hover:text-blue-500">Home</a>
+          </li>
+          <li class="py-2">
+            <a routerLink="/about" class="text-gray-800 hover:text-blue-500">About Us</a>
+          </li>
+          <li class="py-2">
+            <a routerLink="/services" class="text-gray-800 hover:text-blue-500">Services</a>
+          </li>
+          <li class="py-2">
+            <a routerLink="/contact" class="text-gray-800 hover:text-blue-500">Contact Us</a>
+          </li>
+        </ul>
+      </mat-sidenav>
+    </mat-sidenav-container>
+  
+    <mat-sidenav #sidenav class="md:hidden" mode="over">
+      <ul class="p-4">
+        <li class="py-2">
+          <a routerLink="/" class="text-gray-800 hover:text-blue-500">Home</a>
+        </li>
+        <li class="py-2">
+          <a routerLink="/about" class="text-gray-800 hover:text-blue-500">About Us</a>
+        </li>
+        <li class="py-2">
+          <a routerLink="/services" class="text-gray-800 hover:text-blue-500">Services</a>
+        </li>
+        <li class="py-2">
+          <a routerLink="/contact" class="text-gray-800 hover:text-blue-500">Contact Us</a>
+        </li>
+      </ul>
+    </mat-sidenav>
+  </header>
+  

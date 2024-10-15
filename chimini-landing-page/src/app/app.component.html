@@ -1,0 +1,21 @@
+
+<app-header></app-header>
+
+<div class="min-h-screen bg-gradient-to-r from-blue-400 to-purple-600 flex items-center justify-center">
+  <div class="text-center p-8 bg-white shadow-lg rounded-lg max-w-md">
+    <h1 class="text-4xl font-bold mb-4">Welcome to My Landing Page</h1>
+    <p class="text-gray-700 mb-6">This is a modern, beautiful landing page built with Angular and styled using Tailwind CSS.</p>
+    <button (click)="openContactDialog()" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition">
+      Contact Us
+    </button>
+  </div>
+</div>
+
+<app-about-us></app-about-us>
+<app-recommendation></app-recommendation>
+<app-locations></app-locations>
+<app-certifications></app-certifications>
+<app-charities></app-charities>
+<app-footer></app-footer>
+
+<router-outlet></router-outlet>
